@@ -1,5 +1,5 @@
 <div ng-controller="SinglemovieCtrl">
-
+  <i class="fa fa-chevron-left"></i>
   <div class="single-movie-backdrop" style="background-image: url('http://image.tmdb.org/t/p/w500{{singleMovie.backdrop_path}}')">
     <h1 class="single-movie-hero-title">{{singleMovie.title}}</h1>
   </div>
@@ -25,7 +25,6 @@
       <ul class="row">
 
         <li class="col-sm-2 individual-actor" ng-repeat="castMember in movieCast" ng-show="castMember.profile_path" style="background: url('http://image.tmdb.org/t/p/w185/{{castMember.profile_path}}')">  <div class="individual-actor-hover">
-
             <a ng-href="#/actor/{{castMember.id}}">
               <h5 class="cast-member-role">
                 {{castMember.name}}
@@ -33,7 +32,6 @@
                 <span>{{castMember.character}}</span>
               </h5>
             </a>
-
           </div>        
         </li>
 
