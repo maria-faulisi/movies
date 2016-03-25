@@ -167,12 +167,17 @@ p{
   padding: 0px;
 }
 
+.cast-header{
+  margin-bottom: 40px;
+}
+
 .individual-actor{
   position: relative;
   height: 250px;
   background-position: center !important;
   background-repeat: none !important;
   background-size: cover !important;
+  border: 10px solid white;
 }
 
 .individual-actor-hover{
@@ -213,6 +218,10 @@ p{
   display: block;
 }
 
+.no-profile{
+  margin: 50px 0px;
+}
+
 .actor-image img{
   width: 100%;
 }
@@ -224,4 +233,8 @@ p{
 
 .actor-details span{
   display: block;
+}
+
+.actor-bio{
+  white-space: pre-wrap;
 }
