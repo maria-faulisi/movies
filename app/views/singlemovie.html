@@ -23,8 +23,8 @@
     <div class="single-movie-cast col-sm-12">
       <h3 class="cast-header">Cast</h3>
       <ul class="row">
-
-        <li class="col-sm-2 individual-actor" ng-repeat="castMember in movieCast" ng-show="castMember.profile_path" style="background: url('http://image.tmdb.org/t/p/w185/{{castMember.profile_path}}')">  <div class="individual-actor-hover">
+        <li class="col-sm-2 individual-actor" ng-repeat="castMember in movieCast" ng-show="castMember.profile_path" style="background: url('http://image.tmdb.org/t/p/w185/{{castMember.profile_path}}')">  
+          <div class="individual-actor-hover">
             <a ng-href="#/actor/{{castMember.id}}">
               <h5 class="cast-member-role">
                 {{castMember.name}}
