@@ -1,0 +1,28 @@
+.top-rated-header{
+  margin-bottom: 40px;
+}
+
+.individual-top-rated-movie{
+  overflow: auto;
+  padding: 11px;
+  background-color: #E8ECED;
+}
+
+.individual-movie-info-top{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.individual-movie-image-wrapper{
+  padding: 0px;
+}
+
+.indiviual-movie-image-wrapper a{
+  display: block;
+}
+
+.individual-movie-image-wrapper a img{
+  width: 100%;
+  vertical-align: middle;
+}

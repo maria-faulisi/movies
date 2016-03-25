@@ -8,12 +8,12 @@
  * Service in the moviesApp.
  */
 angular.module('moviesApp')
-  .service('getCast', ['$http', function ($http) {
+  .service('getCast', ['$http', 'movieDb', function ($http, movieDb) {
     // AngularJS will instantiate a singleton by calling "new" on this function
     function getMovieCast(movieId){
       return $http({
         method: 'GET',         
-        url: 'http://api.themoviedb.org/3/movie/' + movieId + '/credits?api_key=6618d88ff7dd12a477917a27cb83763e'})
+        url: 'http://api.themoviedb.org/3/movie/' + movieId + '/credits?api_key=' + movieDb.apiKey})
       .then(function successCallback(response){
         return response.data.cast;        
       }, function errorCallback(response){

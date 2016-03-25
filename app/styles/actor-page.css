@@ -1,0 +1,65 @@
+.no-profile{
+  margin: 50px 0px;
+}
+
+.actor-image img{
+  width: 100%;
+}
+
+.actor-details h4, 
+.actor-details span{
+  margin: 10px 0px;
+}
+
+.actor-details span{
+  display: block;
+}
+
+.actor-bio{
+  white-space: pre-wrap;
+}
+
+.actors-movie-list-ul{
+  padding: 0px;
+  list-style: none;
+  margin-top: 50px
+}
+
+.movie-list-header{
+  margin: 40px 0px;
+}
+
+.actor-movie-card{
+  margin-bottom: 15px; 
+}
+
+.actor-movie-card-img{
+  height: 0;
+  padding-top: 66%;
+  background-size: cover !important;
+  background-position: center;
+  border-radius: 5px 5px 0px 0px;
+  border: 2px solid #D4D4D4;
+  border-bottom: none;
+}
+
+.actor-movie-card-bottom{
+  height: 100px;
+  border-radius: 0px 0px 5px 5px;
+  border-right: 2px solid #D4D4D4;
+  border-bottom: 2px solid #D4D4D4;
+  border-left: 2px solid #D4D4D4;
+  padding: 10px;
+}
+
+.movie-card-title{
+  font-size: 20px;
+  margin-top: 5px;
+  color: #696969;
+}
+
+.movie-card-role{
+  color: gray;
+  font-weight: 300;
+  margin-top: 5px;  
+}
