@@ -1,0 +1,21 @@
+<div class="top-rated-movies" ng-controller="MainCtrl">
+  <div class="row">    
+    <h1 class="top-rated-header">Top Rated Movies</h1>
+    <div class="individual-top-rated-movie col-lg-6" ng-repeat="movie in allTopRatedMovies" ng-show="movie.original_language == 'en'">      
+      <div class="individual-movie-image-wrapper col-lg-4">
+        <a ng-href="#/singleMovie/{{movie.id}}">
+          <img src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}">       
+        </a>
+      </div>
+      <div class="individual-movie-info col-lg-8">
+        <div class="individual-movie-info-top">
+          <h3>{{movie.original_title}}</h3>
+          <h5>Release Date:{{movie.release_date | date}}</h5>
+        </div>
+        <div class="individual-movie-info-bottom">
+          <p>{{movie.overview | truncateParagraph}}</p>
+        </div>  
+      </div>
+    </div>  
+  </div><!--ng-repeat-->
+</div><!--top-rated-movies-->

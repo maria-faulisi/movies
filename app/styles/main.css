@@ -1,0 +1,179 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5{
+  margin: 0;
+}
+
+
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+.individual-top-rated-movie{
+  overflow: auto;
+  padding: 11px;
+  background-color: #E8ECED;
+}
+
+.individual-movie-info-top{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.individual-movie-image-wrapper{
+  padding: 0px;
+}
+
+.indiviual-movie-image-wrapper a{
+  display: block;
+}
+
+.individual-movie-image-wrapper a img{
+  width: 100%;
+  vertical-align: middle;
+}
+
+.single-movie-backdrop{
+  position: relative;
+  min-height: 250px;
+  background-repeat: no-repeat;
+  background-origin: center;
+  background-size: cover;
+}
+
+.single-movie-backdrop:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58, 60, 61, 0.30);
+}
+
+.single-movie-hero-title{
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 47px;  
+  z-index: 5
+}
+
+.single-movie-title{
+  font-weight: 600;
+  color: dimgrey;
+  margin-bottom: 9px
+}
+
+.single-movie-tagline{
+  color: gray;
+  font-weight: 200;
+  margin-bottom: 18px;
+}
+
+.poster-and-details{
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.poster img{
+  width: 100%;
+}
+
+.details{
+  margin-top: 24px;
+}
+
+.details p{
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.single-movie-release-date, 
+.single-movie-genres{
+  margin-bottom: 15px;
+}
+
+.single-movie-cast{
+  margin-top: 50px;
+}
+
+.single-movie-cast ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.individual-actor{
+  position: relative;
+  height: 250px;
+}
+
+.individual-actor:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  opacity: 0
+}

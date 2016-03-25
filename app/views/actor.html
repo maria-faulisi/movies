@@ -1,0 +1,24 @@
+<div class="row">
+  <div ng-hide="!actor.biography" class="row">
+    <div class="actor-image col-sm-4">
+      <img src="http://image.tmdb.org/t/p/w185/{{actor.profile_path}}">   
+    </div>
+    
+    <div class="actor-details col-sm-8">
+      <h2>{{actor.name}}</h2>
+      <h4>
+        Born: {{actor.birthday | date}}
+        <span class="death-date" ng-show="actor.deathday">
+          Died: {{actor.deathday | date}}
+        </span>
+      </h4>
+      <p class="actor-bio">{{actor.biography}}</p>      
+    </div>
+    
+  </div>
+
+  <div class="no-profile" ng-show="!actor.biography">
+    <h3>Sorry!  No profile for {{actor.name}} exists on Wikipedia.</h3>
+  </div>
+  
+</div>
