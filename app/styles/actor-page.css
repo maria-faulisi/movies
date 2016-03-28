@@ -52,6 +52,14 @@
   padding: 10px;
 }
 
+.actor-movie-card-link:hover{
+  text-decoration: none;
+}
+
+.actor-movie-card-link:active{
+  text-decoration: none;
+}
+
 .movie-card-title{
   font-size: 20px;
   margin-top: 5px;

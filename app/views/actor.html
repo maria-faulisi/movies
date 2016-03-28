@@ -22,13 +22,15 @@
     <h3 class="movie-list-header">Filmography</h3>
     <ul class="actors-movie-list-ul row">
       <li class="col-sm-4" ng-repeat="movie in actorsMovies">
-        <div class="actor-movie-card">
-          <div class="actor-movie-card-img" style="background:url('http://image.tmdb.org/t/p/w500/{{movie.poster_path}}')"></div>
-          <div class="actor-movie-card-bottom">
-            <h4 class="movie-card-title">{{movie.title}}</h4>
-            <h4 class="movie-card-role">{{movie.character}}</h4>
-          </div>
-        </div>
+        <a class="actor-movie-card-link" ng-href="#/singleMovie/{{movie.id}}">
+          <div class="actor-movie-card">
+            <div class="actor-movie-card-img" style="background:url('http://image.tmdb.org/t/p/w500/{{movie.poster_path}}')"></div>
+            <div class="actor-movie-card-bottom">
+              <h4 class="movie-card-title">{{movie.title}}</h4>
+              <h4 class="movie-card-role">{{movie.character}}</h4>
+            </div>
+          </div>      
+        </a>
       </li>
     </ul>
   </div>
