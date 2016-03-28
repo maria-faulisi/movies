@@ -19,19 +19,26 @@
   </div>
 
   <div class="actors-movie-list">
-    <h3 class="movie-list-header">Filmography</h3>
+    <h3 class="movie-list-header">Filmography
+      <span class="movie-date-filter" ng-click="reverse = false">Descending</span>
+      <span class="movie-date-filter">|</span>
+      <span class="movie-date-filter" ng-click="reverse = true">Ascending</span>
+    </h3>
     <ul class="actors-movie-list-ul row">
-      <li class="col-sm-4" ng-repeat="movie in actorsMovies">
+
+      <li class="col-sm-4" ng-repeat="movie in actorsMovies | orderBy : release_date : reverse">
         <a class="actor-movie-card-link" ng-href="#/singleMovie/{{movie.id}}">
           <div class="actor-movie-card">
             <div class="actor-movie-card-img" style="background:url('http://image.tmdb.org/t/p/w500/{{movie.poster_path}}')"></div>
             <div class="actor-movie-card-bottom">
               <h4 class="movie-card-title">{{movie.title}}</h4>
               <h4 class="movie-card-role">{{movie.character}}</h4>
+              <h5 class="movie-card-release-date">{{movie.release_date | date}}</h5>
             </div>
           </div>      
         </a>
       </li>
+
     </ul>
   </div>
 </div>

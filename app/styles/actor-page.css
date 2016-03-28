@@ -44,7 +44,8 @@
 }
 
 .actor-movie-card-bottom{
-  height: 100px;
+  min-height: 125px;
+  overflow:hidden;
   border-radius: 0px 0px 5px 5px;
   border-right: 2px solid #D4D4D4;
   border-bottom: 2px solid #D4D4D4;
@@ -66,8 +67,15 @@
   color: #696969;
 }
 
-.movie-card-role{
+.movie-card-role,
+.movie-card-release-date{
   color: gray;
   font-weight: 300;
   margin-top: 5px;  
+}
+
+.movie-date-filter{
+  font-size: 17px;
+  color: gray;
+  font-weight: 300;
 }
