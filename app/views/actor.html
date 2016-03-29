@@ -26,7 +26,7 @@
     </h3>
     <ul class="actors-movie-list-ul row">
 
-      <li class="col-sm-4" ng-repeat="movie in actorsMovies | orderBy : release_date : reverse">
+      <li class="col-sm-4" ng-repeat="movie in actorsMovies | orderBy : movie.release_date:reverse">
         <a class="actor-movie-card-link" ng-href="#/singleMovie/{{movie.id}}">
           <div class="actor-movie-card">
             <div class="actor-movie-card-img" style="background:url('http://image.tmdb.org/t/p/w500/{{movie.poster_path}}')"></div>

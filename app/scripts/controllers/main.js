@@ -10,8 +10,6 @@
 angular.module('moviesApp')
   .controller('MainCtrl', ['$scope', '$http', 'getTopRatedMovies', function ($scope, $http, getTopRatedMovies) {
 
-    $scope.allTopRatedMovies = {};
-
     getTopRatedMovies.getAllTopRatedMovies().then(function(data){
       $scope.allTopRatedMovies = data;
     });  

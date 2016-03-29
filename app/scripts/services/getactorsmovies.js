@@ -15,7 +15,18 @@ angular.module('moviesApp')
         method: 'GET',
         url: 'http://api.themoviedb.org/3/person/' + actorId + '/movie_credits?api_key=' + movieDb.apiKey
       }).then(function successCallback(response){
+
+        for (var i = 0; i < response.data.cast.length; i++) {
+          var originalDate = response.data.cast[i]['release_date'];
+
+          if(originalDate != "null"){
+            var momentDate = moment(originalDate, "MM-DD-YYYY");
+            originalDate = momentDate;
+          }          
+        }
+
         return response.data.cast;
+
       }, function errorCallback(response){
         console.log(response);
       });

@@ -9,10 +9,7 @@
  */
 angular.module('moviesApp')
   .controller('SinglemovieCtrl', ['$scope', 'getSingleMovie', '$routeParams', 'getCast', function ($scope, getSingleMovie, $routeParams, getCast) {
-    var currentMovieId = $routeParams.movieId;
-
-    $scope.singleMovie = {};
-    $scope.movieCast = {};
+    var currentMovieId = $routeParams.movieId;    
 
     getSingleMovie.getMovieById(currentMovieId).then(function(data){
       $scope.singleMovie = data;
