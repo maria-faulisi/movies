@@ -17,12 +17,16 @@ angular.module('moviesApp')
       }).then(function successCallback(response){
 
         for (var i = 0; i < response.data.cast.length; i++) {
-          var originalDate = response.data.cast[i]['release_date'];
-
-          if(originalDate != "null"){
-            var momentDate = moment(originalDate, "MM-DD-YYYY");
-            originalDate = momentDate;
+          if(response.data.cast[i]['release_date'] != "null"){
+            var originalDate = response.data.cast[i]['release_date'];
+            var momentDate = moment.utc(originalDate, "MM-DD-YYYY");
+            var momentDateOnly = momentDate.format();
+            response.data.cast[i]['release_date'] = momentDateOnly;
           }          
+        }
+
+        for(var x = 0; x < response.data.cast.length; x++){
+          console.log( typeof(response.data.cast[x]['release_date']));
         }
 
         return response.data.cast;
